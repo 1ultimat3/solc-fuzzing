@@ -12,7 +12,7 @@ Our motivation for fuzzing the Solidity compiler is multilayered. Various depend
 First of all, solc needs to be prepared for manual compilation as described in the [official documentation](https://solidity.readthedocs.io/en/v0.5.2/installing-solidity.html#building-from-source). Furthermore, AFL needs to be [installed](https://github.com/mirrorer/afl/blob/master/docs/INSTALL).
 
 
-In order to make the project fuzzable, it has to be compiled with AFL's G++.
+In order to make the project fuzzable, it has to be compiled with afl-clang++.
 This can be achieved by adjusting scripts/build.sh:
 
 ```
